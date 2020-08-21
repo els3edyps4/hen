@@ -2,8 +2,8 @@
 <head>
 <title>6.72 Exploit Menu By els3edyplay</title>
 <script>
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando Cache Offline: " + Percent + "%";}
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Instalada Com Sucesso";},1000);setTimeout(function(){window.msgs.innerHTML="Agora Feche e Abra Novamente o Seu Navegador";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="تحميل الكاش: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="تم تحميل الكاش بنجاح";},1000);setTimeout(function(){window.msgs.innerHTML="Agora Feche e Abra Novamente o Seu Navegador";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 <script src="exp_common.js"></script>
 <script src="exp_jailbreak.js"></script>
@@ -35,34 +35,18 @@ html{
 <button onclick="الغاء التحديثات(); return false"> الغاء التحديثات </button>
 <button onclick="تفعيل التحديثات(); return false"> تفعيل التحديثات </button>
 <br><br><br>
-<button onclick="load_fanthresh(); return false"> Definir limite do ventilador </button><select id="tempC"></select>&#176;C<br>A TEMPERATURA PADRÃO DO PS4 É 79&#176;C
-<script>
-for(var i=40; i<=79; i++){
-    var select = document.getElementById("tempC");
-    var option = document.createElement("OPTION");
-	select.options.add(option);
-	option.text = i;
-	option.value = i;
-}
-tempC.value=60;
 </script>
 <br>
 </div>
 <script>
-function load_exploit(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>تم تحميل الثغره ...</h1>";
+function تفعيل الثغره(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'> تحميل الثغره ...</h1>";
 setTimeout(jailbreak,500);
 }
 
 function تحميل الثغره+الهين(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Carregando Exploit + HEN ...</h1>";
-LoadedMSG="Exploit + HEN els3edy ✔";ExploitMira="HEN";MiraSRC="pl_HEN.js";
-setTimeout(jailbreak,500);
-}
-
-function load_exploit_mira(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Carregando Exploit + Mira ...</h1>";
-LoadedMSG="Exploit + Mira Carregado ✔";ExploitMira="yes";MiraSRC="pl_mira.js";
+LoadedMSG="الثغره وهين ✔";ExploitMira="HEN";MiraSRC="pl_HEN.js";
 setTimeout(jailbreak,500);
 }
 
@@ -72,14 +56,8 @@ LoadedMSG="Exploit + Mira Carregado ✔";ExploitMira="yes";MiraSRC="pl_mira_unof
 setTimeout(jailbreak,500);
 }
 
-function load_binloader(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Carregando Bin Loader ...</h1>";
-LoadedMSG="Send Payload To Port 9021";
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-}
-
-function load_HEN(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Carregando HEN ...</h1>";
+function تفعيل الهين(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>تفعيل الهين ...</h1>";
 LoadedMSG="HEN els3edy ✔";
 var script = document.createElement('script');script.src = "pl_HEN.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
