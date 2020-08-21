@@ -10,7 +10,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <style type="text/css">
 html{
 
-    background: url(Els3edy.jpg) no-repeat center center fixed; 
+    background:
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
