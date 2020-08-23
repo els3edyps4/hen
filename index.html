@@ -19,6 +19,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="ت�
 <button onclick="load_exploit_miraUnoff(); return false"> (تفعيل الثغره+ميرا (غير رسمي </button>
 <br><br><br><br><br><br><br><br>
 <button onclick="load_updatesdisable(); return false"> الغاء التحديثات </button>
+<button onclick="load_updatesenable(); return false"> تفعيل التحديثات </button>
 
 </div>
 <script>
@@ -39,6 +40,13 @@ LoadedMSG="Disable Updates Loaded ✔";
 var script = document.createElement('script');script.src = "pl_updatesDisable.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
+function load_updatesenable(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Enable Updates ...</h1>";
+LoadedMSG="Enable Updates Loaded ✔";
+var script = document.createElement('script');script.src = "pl_updatesEnable.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
 </script>
 </body>
 </html>
